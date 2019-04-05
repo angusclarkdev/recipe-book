@@ -3,7 +3,7 @@
     "@babel/preset-env",
     "@babel/preset-react"
   ],
-  "plugins": [ [
+  "plugins": [[
       "react-css-modules",
       {
         "webpackHotModuleReloading": true,
@@ -27,9 +27,11 @@
           "@components": "./src/components",
           "@atoms": "/components/atoms",
           "@molecules": "./src/components/molecules",
+          "@organisms": "./src/components/organisms",
           "@variables": "./src/resources/variables"
         }
       }
     ],
+    ["@babel/plugin-proposal-class-properties"]
   ]
 }

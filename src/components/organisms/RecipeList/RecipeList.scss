@@ -1,4 +1,4 @@
-@import '../../resources/variables/spacing.scss';
+@import '../../../resources/variables/spacing.scss';
 
 li {
   list-style: none;
@@ -6,9 +6,9 @@ li {
 }
 
 .recipeWrapper { 
-  width: 961px;
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
   padding: $spacing-1;
 }
 
