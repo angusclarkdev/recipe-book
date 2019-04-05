@@ -1,0 +1,35 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [ [
+      "react-css-modules",
+      {
+        "webpackHotModuleReloading": true,
+        "generateScopedName": "vfuk-[name]__[local]",
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss",
+            "plugins": [
+              "postcss-nested"
+            ]
+          }
+        }
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [ "./" ],
+        "alias": {
+          "@helpers": "/helpers",
+          "@components": "./src/components",
+          "@atoms": "/components/atoms",
+          "@molecules": "./src/components/molecules",
+          "@variables": "./src/resources/variables"
+        }
+      }
+    ],
+  ]
+}
