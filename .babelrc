@@ -7,7 +7,7 @@
       "react-css-modules",
       {
         "webpackHotModuleReloading": true,
-        "generateScopedName": "vfuk-[name]__[local]",
+        "generateScopedName": "[path]___[name]__[local]___[hash:base64:5]",
         "filetypes": {
           ".scss": {
             "syntax": "postcss-scss",
@@ -25,6 +25,7 @@
         "alias": {
           "@helpers": "/helpers",
           "@components": "./src/components",
+          "@pages": "./src/pages",
           "@atoms": "/components/atoms",
           "@molecules": "./src/components/molecules",
           "@organisms": "./src/components/organisms",

@@ -10,7 +10,7 @@ class Navigation extends PureComponent {
           <li className={navListItem}> icon </li>
           <li className={navListItem}> My Cookbook </li>
           <li className={navListItem} onClick={this.toggleSearch}> search </li>
-          <li className={navListItem} onClick={this.toggleModal}> Add new meal </li>
+          <li className={navListItem} onClick={this.props.toggleModal}> Add new meal </li>
         </ul>
       </nav>
     )
