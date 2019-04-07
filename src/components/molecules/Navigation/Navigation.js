@@ -2,9 +2,6 @@ import React, { PureComponent } from 'react'
 import styles from './Navigation.module.css'
 
 class Navigation extends PureComponent {
-  toggleModal (event) {
-    console.info(event)
-  }
   render () {
     const { navBar, navListItem } = styles
     return (
