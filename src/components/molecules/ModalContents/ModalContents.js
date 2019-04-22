@@ -9,11 +9,10 @@ class ModalContents extends PureComponent {
     children: PropTypes.node
   }
   render () {
-    console.info(this.props.title)
     return (
       <div>
         <h2> {this.props.title} </h2>
-        {/* {this.props.children} */}
+        {this.props.children}
       </div>
     )
   }
