@@ -25,11 +25,11 @@
         "alias": {
           "@helpers": "/helpers",
           "@components": "./src/components",
-          "@pages": "./src/pages",
-          "@atoms": "/components/atoms",
-          "@molecules": "./src/components/molecules",
-          "@organisms": "./src/components/organisms",
-          "@variables": "./src/resources/variables"
+          "@pages": "./src/frontend/pages",
+          "@atoms": "frontend/components/atoms",
+          "@molecules": "./src/frontend/components/molecules",
+          "@organisms": "./src/frontend/components/organisms",
+          "@variables": "./src/frontend/resources/variables"
         }
       }
     ],
