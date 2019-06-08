@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Navigation from '@molecules/Navigation'
-import RecipeList from '@organisms/RecipeList'
+// import RecipeList from '@organisms/RecipeList'
 import Form from '@organisms/Form'
 import Modal from '@molecules/Modal'
 
@@ -17,7 +17,7 @@ class HomePage extends Component {
     return (
       <Fragment>
         <Navigation toggleModal={this.handleToggleModal} />
-        <RecipeList />
+        {/* <RecipeList /> */}
         <Modal isOpen={this.state.isModalOpen} title='Add a new recipe'>
           <Form />
         </Modal>
